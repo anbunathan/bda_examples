@@ -1,0 +1,10 @@
+0
+8
+employees 2 11
+employees 0 2
+KStreamAggDemo-state-store-changelog 0 0
+KStreamAggDemo-state-store-repartition 2 7
+__consumer_offsets 2 19
+__consumer_offsets 0 0
+employees 1 0
+__consumer_offsets 1 0
