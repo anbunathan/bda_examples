@@ -1,5 +1,5 @@
-CREATE KEYSPACE spark_db WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
-USE spark_db;
+CREATE KEYSPACE spark_db1 WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+USE spark_db1;
 CREATE TABLE users(Login_id text PRIMARY KEY, user_name text, last_login timestamp);
 
 INSERT INTO users (Login_id, user_name, last_login) VALUES( '100001', 'Prashant', '2019-02-05 10:05:00');

@@ -41,7 +41,7 @@ object StreamTableJoinDemo extends Serializable {
 
     val userDF = spark.read
       .format("org.apache.spark.sql.cassandra")
-      .option("keyspace", "spark_db")
+      .option("keyspace", "spark_db1")
       .option("table", "users")
       .load()
 
@@ -70,7 +70,7 @@ object StreamTableJoinDemo extends Serializable {
   def writeToCassandra(outputDF: DataFrame, batchID: Long): Unit = {
     outputDF.write
       .format("org.apache.spark.sql.cassandra")
-      .option("keyspace", "spark_db")
+      .option("keyspace", "spark_db1")
       .option("table", "users")
       .mode("append")
       .save()
